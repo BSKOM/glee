@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'global';
 
+
 .header{
   padding: 49px 0 45px;
   &__inner{
@@ -11,6 +12,7 @@
     align-items: center;
   }  
 }
+
 .menu{
   &__list{
     display:flex;
@@ -142,6 +144,7 @@
     width: 70px;
     padding:1px 3px;
     border: none;
+    cursor: pointer;
   }
 
 }
