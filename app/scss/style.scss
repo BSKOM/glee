@@ -8,7 +8,8 @@
 .header{
   padding: 49px 0 45px;
   &__container{
-    max-width: 1770px;    
+    max-width: 1770px;
+    padding: 0;    
   }
   &__inner{
     display: flex;
@@ -186,13 +187,18 @@
 }
 
 .top-slider{
-  background-color: $bg;
-  padding-top: 220px;
-  &__item{
-    display:flex !important;
-    justify-content: space-between;
-    align-items:flex-end;
+  &__container{
+    padding: 100px 15px 0 0;
+    max-width: 1770px;
+    background-color: $bg;   
   }
+
+  &__item{  
+    display:flex !important;
+  }
+  &__content{
+    padding: 125px 164px 0 300px;
+  }  
   &__title{
     max-width:470px;
     margin-bottom: 40px; 
@@ -219,19 +225,30 @@
     font-weight: bold;
     color:#fff;
     text-decoration: none;
-    display:flex;   align-items:center;
-    
+    display:flex;   
+    align-items:center;   
   }
   &__link-img{
     margin-left: 50px;
   }
   &__img{
-        max-height: 260px;
+    max-height: 260px;
+    transform: translateX(-116px);
+    z-index: 3;
+  }
+  &__wrapper-img{
+    width: 634px;
+    height: 634px;
+    margin: 0 170px 0 auto;  
+    background-image: linear-gradient( 90deg, $bg 0%, #fff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
   }
   .slick-dots{
-    display: flex; 
+    display: flex;     
     justify-content:center;
-    padding: 203px 0 42px;
+    padding: 10px 0 42px;
     li{
       padding: 0 5px; 
       button{
@@ -246,8 +263,8 @@
       }
       button:focus,
       button:active{
-          outline: none; 
-        }
+        outline: none;
+      }
 
       &.slick-active{      
         button{
@@ -257,20 +274,14 @@
     }
   }
 }
+.top-slider__bottom{
+  background-color: #fef7f0;
+  min-height:170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 
-
-
-// h6{
-//   font-family: %dmsans-700;
-  
-// }
-
-
-
-
-
-
-
-@import 'media';
-
+@import 'media'; 
