@@ -283,5 +283,92 @@
 
 }
 
+.info{
+  display:flex;
+  justify-content: space-around;
+  min-height: 175px;
+  background-color: #fef7f0;
+  &__container{
+    padding: 0;
+    max-width: 1770px;
+    background-color: $bg; 
+
+  }
+  &__item{
+    display:flex;
+    justify-content: center;
+    width:300px;
+    min-height:80px;
+    align-items: center;
+  }
+  &__item-text{
+    padding-left:30px;
+  }  
+}
+
+.week__title{
+  font-size: 36px;
+  font-family: "DM Sans";
+  color:#191919;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin:70px auto 30px;
+
+}
+.week__filter{
+  display:flex;
+  justify-content: center;
+  
+  &-item{
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: #8b8b8b;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 15px;    
+  }
+  &-item:hover{
+  color: #191919; 
+  }
+}
+.week{
+  &__items{
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:30px;
+  }
+  &__item{
+    background-repeat: no-repeat;
+    // background-size: contain;
+    background-position: center center;
+    width: 270px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+     color:#243f4d;}
+  .name{
+    font-size: 16px;
+    font-family: "DM Sans";
+    line-height: 1.2;
+    text-align: center; 
+    color:#243f4d;
+    padding-bottom: 20px;
+    
+}
+      .price{
+          text-align: center; 
+  color: #a3bbc8;
+  // margin-bottom: 40px;
+}
+
+
+}
 
 @import 'media'; 
