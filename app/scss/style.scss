@@ -73,7 +73,16 @@
     width: 17px;
     border-radius: 50%;
     background-color: #fff;
-    text-align: center;    
+    // text-align: center;
+    font-size: 10px;  font-family: "DM Sans";
+    line-height: 1.2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+ 
+  text-align: center;
+
   }
 }
 .settings__inner{
@@ -316,54 +325,77 @@
   margin:70px auto 30px;
 
 }
-.week__filter{
+.week-filter{
   display:flex;
   justify-content: center;
   
-  &-item{
+  &__btn{
+    background-color: transparent;
+    border:none;
   font-size: 16px;
   font-family: "DM Sans";
   color: #8b8b8b;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  padding: 0 15px;    
+  padding: 0 15px;
+  outline: none;    
   }
-  &-item:hover{
-  color: #191919; 
+ 
+  &__btn:hover,
+  &__btn:active
+  {
+  color: #191919;
   }
 }
+.mixitup-control-active{
+    color: #191919;
+}
 .week{
-  &__items{
+  &__content{
     display: grid;
     min-height: 800px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap:30px;
+    grid-gap:30px;    
   }
   &__item{
     background-repeat: no-repeat;
-    // background-size: contain;
     background-position: center center;
     width: 270px;
     height: 380px;
     border-radius: 10px;
     background-color: #fff;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-     color:#243f4d;}
-  .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#243f4d;
+    position:relative; 
+  }
+  &__content-select{
+    // position:absolute;
+    // top:0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    display:flex;
+    justify-content: center;
+    // z-index: -1;     
+  }
+  // &__content-select:hover .week__content-select{
+  //   z-index: 1;     
+  // }
+
+.name{
     font-size: 16px;
     font-family: "DM Sans";
     line-height: 1.2;
     text-align: center; 
     color:#243f4d;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;    
 }
-      .price{
-          text-align: center; 
+.price{
+  text-align: center; 
   color: #a3bbc8;
   // margin-bottom: 40px;
 }

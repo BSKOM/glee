@@ -267,71 +267,85 @@
     </section>
     <section class="week">
       <div class="container">
-        <h3 class="week__title">
+        <h3 class="title week__title">
           Products of the week
         </h3>
-         <ul class="week__filter">
-            <li class="week__filter-item">All</li>
-            <li class="week__filter-item">Furnitures</li>
-            <li class="week__filter-item">Chairs</li>
-            <li class="week__filter-item">Lighting</li>
-            <li class="week__filter-item">Decor</li>
-          </ul>
-        <div class="week__items">
-          
-          <div class="week__item" style="background-image: url('images/week/1.jpg');">
-          <h6 class="name">
-            Wooden radio
-          </h6>
-          <p class="price">
-            $29.00
-
-          </p>
+        <div class="week-filter">
+          <button class="week-filter__btn" data-filter="all">All</button>
+          <button class="week-filter__btn" data-filter=".category-a">Furnitures</button>
+          <button class="week-filter__btn" data-filter=".category-b">Chairs</button>
+          <button class="week-filter__btn" data-filter=".category-c">Lighting</button>
+          <button class="week-filter__btn" data-filter=".category-d">Decor</button>
         </div>
-          <div class="week__item" style="background-image: url('images/week/2.jpg');">
-                  <h6 class="name">
-                    Wooden chair
-                  </h6>
-                  <p class="price">
-                    $29.00
-                  
-                  </p>
-                </div>
-          <div class="week__item" style="background-image: url('images/week/3.jpg');"><h6 class="name">
-            White chair
-          </h6>
-          <p class="price">$29.00          
-          </p></div>
-          <div class="week__item" style="background-image: url('images/week/4.jpg');"><h6 class="name">
-            Retro table
-          </h6>
-          <p class="price">$29.00
-          
-          </p></div>
-          <div class="week__item" style="background-image: url('images/week/5.jpg');"><h6 class="name">
-            Wooden radio
-          </h6>
-          <p class="price">$29.00
-          
-          </p></div>
-          <div class="week__item" style="background-image: url('images/week/6.jpg');"><h6 class="name">
-            Wooden chair
-          </h6>
-          <p class="price">$29.00
-       
-          </p></div>
-          <div class="week__item" style="background-image: url('images/week/7.jpg');"><h6 class="name">
-            White chair
-          </h6>
-          <p class="price">$29.00
-          
-          </p></div>
-          <div class="week__item" style="background-image: url('images/week/8.jpg');"><h6 class="name">
-            Retro table
-          </h6>
-          <p class="price">$29.00
-          
-          </p></div>
+        <div class="week__content">
+          <div class="week__item mix category-a" style="background-image: url('images/week/1.jpg');">
+            <h6 class="name">
+              Wooden radio
+            </h6>
+            <p class="price">
+              $29.00
+            </p>
+            <div class="week__content-select">
+              <a class="week__item-link" href="">
+                <img src="images/icons/search-hover.svg" alt="search icon">
+              </a>
+              <a href="" class="week__item-link">
+                <img src="images/icons/cart-hover.svg" alt="cart-icon"></a>
+              <a href="" class="week__item-link">
+                <img src="images/icons/heart-hover.svg" alt="search icon">
+              </a>
+            </div>
+          </div>
+          <div class="week__item mix category-b" style="background-image: url('images/week/2.jpg');">
+            <h6 class="name">
+              Wooden chair
+            </h6>
+            <p class="price">
+              $29.00
+            </p>
+          </div>
+          <div class="week__item mix category-c" style="background-image: url('images/week/3.jpg');">
+            <h6 class="name">
+              White chair
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
+          <div class="week__item mix category-d" style="background-image: url('images/week/4.jpg');">
+            <h6 class="name">
+              Retro table
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
+          <div class="week__item mix category-a" style="background-image: url('images/week/5.jpg');">
+            <h6 class="name">
+              Wooden radio
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
+          <div class="week__item mix category-b" style="background-image: url('images/week/6.jpg');">
+            <h6 class="name">
+              Wooden chair
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
+          <div class="week__item mix category-c" style="background-image: url('images/week/7.jpg');">
+            <h6 class="name">
+              White chair
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
+          <div class="week__item mix category-d" style="background-image: url('images/week/8.jpg');">
+            <h6 class="name">
+              Retro table
+            </h6>
+            <p class="price">$29.00
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -452,7 +466,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
