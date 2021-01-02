@@ -2,6 +2,7 @@ html,
 body{
   height: 100%;
 }
+
 body{
   min-height: 100vh;
   color: #243f4d;
@@ -13,7 +14,6 @@ body{
 }
 .main{
   flex-grow: 1;
-
 }
 .container{
   max-width: 1200px;
@@ -21,12 +21,12 @@ body{
   padding: 0 15px;
 }
 
-a{
-  color: #243f4d;
-  font-size: 14px;
-  line-height: normal;
-  @extend %rubik-400;
-}
+// a{
+//   color: #243f4d;
+//   font-size: 14px;
+//   line-height: normal;
+//   @extend %rubik-400;
+// }
 
 // 436372 headermenucolor
 // edf1f4 headermagnfon
