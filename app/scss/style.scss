@@ -315,6 +315,7 @@
   }  
 }
 
+.category-title,
 .week__title{
   font-size: 36px;
   font-family: "DM Sans";
@@ -325,6 +326,7 @@
   margin:70px auto 30px;
 
 }
+.category-filter,
 .week-filter{
   display:flex;
   justify-content: center;
@@ -333,14 +335,14 @@
   &__btn{
     background-color: transparent;
     border:none;
-  font-size: 16px;
-  font-family: "DM Sans";
-  color: #8b8b8b;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
-  padding: 0 15px;
-  outline: none;    
+    font-size: 16px;
+    font-family: "DM Sans";
+    color: #8b8b8b;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 15px;
+    outline: none;    
   }
  
   &__btn:hover,
@@ -407,7 +409,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .week__item:hover .week__content-select{
 z-index: 1;
 }
@@ -429,10 +430,47 @@ z-index: 1;
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
-
   display:flex;
   justify-content: center;
   align-items: center;
 }
+
+.category{
+  &__content{
+    display: grid;
+    min-height: 526px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 35px;
+   }
+  &-item{
+    &__img-box{
+      width: 370px;
+      height: 246px;
+      background-color: #f8f8f8;
+      position: relative;      
+    }
+    &__text{
+      position: absolute;
+      top:40px;
+      left:35px;
+      font-size: 20px;
+      font-family: "DM Sans";
+      color: rgb(26, 26, 26);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: left;
+    }
+    &__classic{
+      padding-top: 16px;
+      font-size: 16px;
+      color: #bacbd5;
+    }
+  } 
+}
+
+
+
 
 @import 'media'; 
