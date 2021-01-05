@@ -1,18 +1,14 @@
 $(function () {
-  var mixer = mixitup('.week__content');
-  // function initFilters() {
-  //   $('.week__content').mixItUp({
-  //     selectors: {
-  //       filter: '.filter1',
-  //     }
-  //   });
-  //   $('.category__content').mixItUp({
-  //     selectors: {
-  //       filter: '.filter2',
-  //      }
-  //   });
-  // }
-  // $initFilters();
+  var containerEl1 = document.querySelector('[data-ref="container-1"]');
+  var containerEl2 = document.querySelector('[data-ref="container-2"]');
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer1 = mixitup(containerEl2, config);
+
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
