@@ -1,5 +1,14 @@
 $(function () {
-  var mixer = mixitup('.week__content'); 
+  var containerEl1 = document.querySelector('[data-ref="container-1"]');
+  var containerEl2 = document.querySelector('[data-ref="container-2"]');
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer1 = mixitup(containerEl2, config);
+
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
@@ -7,5 +16,4 @@ $(function () {
     autoplay:true,
     autoplaySpeed:2000
   });
-
 });
