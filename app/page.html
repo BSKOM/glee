@@ -9,9 +9,8 @@
 </head>
 
 <body>
-  
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="header__inner">
         <a class="logo" href="">
           <img class="logo__img" src="images/logo.png" alt="logo">
@@ -76,12 +75,35 @@
       </div>
     </div>
   </header>
-  <main class="main">
+  <section class="top">
+    <div class="breadcrumbs">
+      <h3 class="top-title">Log in</h3>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  </main>
+  <section class="blog">
+    <div class="clients-inner">
+      <div class="container">
+        <div class="clients">
+          <img src="images/blog/partner1.png" alt="klients logo">
+          <img src="images/blog/partner2.png" alt="klients logo">
+          <img src="images/blog/partner3.png" alt="klients logo">
+          <img src="images/blog/partner4.png" alt="klients logo">
+          <img src="images/blog/partner5.png" alt="klients logo">
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
     <div class="container">
-
       <div class="footer-top">
         <div class="footer-top__item footer-top__contacts">
           <a class="logo footer-top__logo" href="">
@@ -168,7 +190,7 @@
           </p>
           <form class="footer-top__form" action="">
             <input class="footer-top__form-input" type="email" size="23%" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit"  >Subscribe
+            <button class="footer-top__form-btn" type="submit">Subscribe
             </button>
           </form>
         </div>
@@ -195,8 +217,8 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>
