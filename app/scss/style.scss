@@ -29,7 +29,8 @@
     font-family: Rubik;
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px; 
+    line-height: 15px;
+    text-decoration: none; 
     color: $subtitle;
     transition: all .3s;
     &:hover{
@@ -609,13 +610,121 @@ z-index: 1;
     }
 
   }
-  .clients{
+  .clients {   
     display:flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 270px;
    }
-  
+
+}
+.top{
+  height: 130px;
+  background-color: #edf1f4;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &-title{
+    font-size: 36px;
+    font-family: "Rubik";
+      color: rgb(34, 41, 51);
+
+  }
+
+}
+
+
+.clients-inner{
+  margin-bottom: auto;
+
+  height: 250px;
+  background-color: #fef7f0;
+}
+.clients {   
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+.modal{
+  padding-top: 120px;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 120px;
+  position: relative;
+  color:#436372;
+ 
+
+  &__label{
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    height: 56px;
+    margin: 15px 0 30px;    
+  }
+  &__btn{
+    display: block;
+    width:100%;
+    background-color: rgb(163, 187, 200);height: 60px;
+    border:none;
+    margin: 35px 0;
+  }
+  &__error{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+  }
+  &__link-btn {
+    width:100%;
+    border: 2px solid #a3bbc8;
+    height: 56px;
+    background-color: #fff; 
+    cursor: pointer;   
+  }
+  &__text{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__line{
+    background-color: rgb(246, 246, 246);
+    margin:30px 0;
+    width: 100%;
+    height: 2px;
+  }
+}
+.terms{
+  padding: 65px 0 40px;
+
+  &__title{
+    margin-top: 50px;
+      font-size: 24px;
+  font-family: "Rubik";
+  color: rgb(36, 63, 77);
+  line-height: 1.667;
+  }
+  &__items{
+    list-style-type: decimal-leading-zero;
+  }
+  &__item,
+  p
+  {
+    margin-left: 35px;
+      font-size: 16px;
+  font-family: "Rubik";
+  color: rgb(36, 63, 77);
+  line-height: 1.875;
+  }
+  p{
+  margin-left: 0;
+  }
 }
 
 @import 'media'; 

@@ -21,6 +21,46 @@ body{
   padding: 0 15px;
 }
 
+.breadcrumbs{
+    height: 120px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
+  &__list{
+  display:flex;
+  justify-content: center;
+
+  }
+  .top-tilte{
+    font-size: 36px;
+    font-family: "Myriad Pro";
+    color: rgb(34, 41, 51);
+    line-height: 0.667;
+    text-align: center;
+   }
+  &__item{
+    &::after{
+      content: ' /';
+      margin-right: 5px;
+      position: relative;
+      top: 2px;
+    }
+    &:last-child{
+      &::after{
+        content: '';
+        margin-right: 0;
+      }
+    }
+  }
+  &__link{
+    font-size: 14px;
+    font-family: "Rubik";
+    color: rgba(34, 41, 51, 0.6);
+    text-decoration: none;
+    line-height: 1.714;
+  }
+} 
 // a{
 //   color: #243f4d;
 //   font-size: 14px;
