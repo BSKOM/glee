@@ -29,7 +29,8 @@
     font-family: Rubik;
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px; 
+    line-height: 15px;
+    text-decoration: none; 
     color: $subtitle;
     transition: all .3s;
     &:hover{
@@ -634,33 +635,7 @@ z-index: 1;
   }
 
 }
-.breadcrumbs{
-  &__list{
-  display:flex;
-  justify-content: center;
-  }
-  &__item{
-    &::after{
-      content: ' /';
-      margin-right: 5px;
-      position: relative;
-      top: 2px;
-    }
-    &:last-child{
-      &::after{
-        content: '';
-        margin-right: 0;
-      }
-    }
-  }
-  &__link{
-    font-size: 14px;
-    font-family: "Rubik";
-    color: rgba(34, 41, 51, 0.6);
-    text-decoration: none;
-    line-height: 1.714;
-  }
-} 
+
 
 .clients-inner{
   margin-bottom: auto;
@@ -675,6 +650,55 @@ z-index: 1;
   align-items: center;
  }
 
+.modal{
+  padding-top: 120px;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 120px;
+  position: relative;
+  color:#436372;
+ 
 
+  &__label{
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    height: 56px;
+    margin: 15px 0 30px;    
+  }
+  &__btn{
+    display: block;
+    width:100%;
+    background-color: rgb(163, 187, 200);height: 60px;
+    border:none;
+    margin: 35px 0;
+  }
+  &__error{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+  }
+  &__link-btn {
+    width:100%;
+    border: 2px solid #a3bbc8;
+    height: 56px;
+    background-color: #fff; 
+    cursor: pointer;   
+  }
+  &__text{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__line{
+    background-color: rgb(246, 246, 246);
+    margin:30px 0;
+    width: 100%;
+    height: 2px;
+  }
+}
 
 @import 'media'; 
