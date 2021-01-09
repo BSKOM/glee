@@ -700,5 +700,31 @@ z-index: 1;
     height: 2px;
   }
 }
+.terms{
+  padding: 65px 0 40px;
+
+  &__title{
+    margin-top: 50px;
+      font-size: 24px;
+  font-family: "Rubik";
+  color: rgb(36, 63, 77);
+  line-height: 1.667;
+  }
+  &__items{
+    list-style-type: decimal-leading-zero;
+  }
+  &__item,
+  p
+  {
+    margin-left: 35px;
+      font-size: 16px;
+  font-family: "Rubik";
+  color: rgb(36, 63, 77);
+  line-height: 1.875;
+  }
+  p{
+  margin-left: 0;
+  }
+}
 
 @import 'media'; 
