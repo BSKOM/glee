@@ -762,20 +762,45 @@ z-index: 1;
     width: 39px;
     height: 3px;
   }
+  &-price__label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  &-price__from,
+  &-price__to,
+  &-price__from::before,
+  &-price__to::before,
+  &-price__from::after,
+  &-price__from::after{
+    font-size: 14px;
+    font-family: "Rubik";
+    color: rgb(36, 63, 77);
+  }
+
+  &-price__from::before,
+  &-price__to::before{
+    content: '$';
+  }
+  &-price__from::after,
+  &-price__to::after{
+    content: '.00';
+  }
 }
+
 .irs--flat .irs-line {
-    top: 25px;
+    top: 6px;
     height: 3px;
     background-color:rgb(163, 187, 200);
 }
 .irs--flat .irs-bar {
-    top: 25px;
+    top: 6px;
     height: 4px;
     background-color: rgb(163, 187, 200);
     opacity: 0.659;
 }
 .irs--flat .irs-handle {
-    top: 19px;
+    top: 0px;
     width: 15px;
     height: 15px;
     background-color: rgb(163, 187, 200);
@@ -794,7 +819,7 @@ z-index: 1;
     background-color: rgb(163, 187, 200);
 }
 .irs--flat .irs-min, .irs--flat .irs-max {
-    top: 10;
+    top: 1;
     padding: 0px;
     margin:40px 2px 0 0;
 
@@ -805,8 +830,59 @@ z-index: 1;
   font-family: "Rubik";
   color: rgb(36, 63, 77);
   line-height: 3.071;
+  display:none;
 }
 
+.filter-brand{
+  &__label{
+    display:block;
+    margin-bottom: 3px;
+    cursor:pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox{
+      background-color: #edf1f4;
+    }
+  }
+  &__checkbox{
+    display:flex;
+    justify-content: space-between;
+    padding:14px 14px 14px 14px;
+  }
+  &__text:last-child{
+    width: 46px;
+    text-align:center;
+    padding:0 10px; 
+  }
+
+}
+.productlist1-recent{
+  &__item{
+    display:flex;
+    margin-bottom: 20px;
+    // justify-content: flex-start;
+  }
+
+  &__img{
+    width: 71px;
+    height: 71px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 18px;
+  }
+  &__info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 24px;
+    font-family: "Rubik";
+    color: rgb(51, 51, 51);
+   }
+}
+.star{
+  transform: translateX(-6px);
+}
 
 
 @import 'media'; 
