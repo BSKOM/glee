@@ -1,5 +1,7 @@
 $(function () {
 
+  $('.product-one__num').styler();
+
   $('.product-slide__thumb').slick({
     asNavFor: '.product-slide__big',
     focusOnSelect: true,

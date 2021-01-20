@@ -1215,6 +1215,7 @@ z-index: 1;
 .product-detalis{
   padding:120px 0;
 }
+
 .product-one{
   &__inner{
     display:flex;
@@ -1226,12 +1227,118 @@ z-index: 1;
   }
   &__content{
     width:550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__title{
-
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 18px;
   }
-  &__box{
-    
+  &__star{
+    margin-bottom: 40px;
+  }
+  &__price{
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 40px;
+  }
+
+  &__text{
+    font-size: 16px;
+    color: rgb(36, 63, 77);
+    margin-bottom: 35px;
+  }
+  &__btn{
+    margin-left: 15px;
+    margin-bottom: 58px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(163, 187, 200);
+    cursor: pointer;
+    border:none;
+    height: 53px;
+    width: 210px;
+  }
+   
+}
+
+.jq-number__field {
+  height: 100%;
+  width: 148px;
+  border-bottom-color:transparent;
+  border: 1px solid #a3bbc8;
+  border-radius: 0px;
+  box-shadow: none;
+
+}
+.jq-number__field input {
+    width: 100%;
+    height: 51px;
+    border: none;
+    outline: none;
+    background: none;
+    font: 14px Arial, sans-serif;
+    color: #5c5c5c;
+    font-size: 15px;
+    text-align: center;
+}
+.jq-number {
+  padding: 0;
+  position: relative;
+}
+
+
+.jq-number__spin {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0px;
+    width: 48px;
+    height: 100%;
+    border-bottom-color: transparent;
+    border-left: 1px solid #a3bbc8;
+    background:transparent;
+    box-shadow:none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.jq-number__spin.minus{
+  right: auto;
+  left: 0px;
+  border-left: none;  
+  border-right: 1px solid #a3bbc8;
+}
+
+.jq-number__spin:after {
+  content: '+';
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+}
+
+.jq-number__spin.minus:after {
+  content: '-';
+  left: 20px;
+  right: auto; 
+}
+
+.product-info{
+
+  &__item{
+    display:flex;
+    font-size: 16px;
+    color: rgb(36, 63, 77);
+    line-height: 1.875;
   }
 }
 
