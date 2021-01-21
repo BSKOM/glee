@@ -1268,33 +1268,30 @@ z-index: 1;
    
 }
 
-.jq-number__field {
-  height: 100%;
-  width: 148px;
-  border-bottom-color:transparent;
-  border: 1px solid #a3bbc8;
-  border-radius: 0px;
-  box-shadow: none;
 
-}
-.jq-number__field input {
-    width: 100%;
-    height: 51px;
-    border: none;
-    outline: none;
-    background: none;
-    font: 14px Arial, sans-serif;
-    color: #5c5c5c;
-    font-size: 15px;
-    text-align: center;
-}
 .jq-number {
   padding: 0;
   position: relative;
-}
-
-
-.jq-number__spin {
+  &__field {
+    height: 100%;
+    width: 148px;
+    border-bottom-color:transparent;
+    border: 1px solid #a3bbc8;
+    border-radius: 0px;
+    box-shadow: none;
+    input {
+      width: 100%;
+      height: 51px;
+      border: none;
+      outline: none;
+      background: none;
+      font: 14px Arial, sans-serif;
+      color: #5c5c5c;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  &__spin {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1307,39 +1304,45 @@ z-index: 1;
     box-shadow:none;
     text-shadow: none;
     cursor: pointer;
+    &:after {
+      content: '+';
+      font-size: 20px;
+      font-weight: normal;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 17px;
+    }
+    &.minus{
+      right: auto;
+      left: 0px;
+      border-left: none;  
+      border-right: 1px solid #a3bbc8;
+      &:after {
+        content: '-';
+        left: 20px;
+        right: auto; 
+      }
+    }
+  }
 }
 
-.jq-number__spin.minus{
-  right: auto;
-  left: 0px;
-  border-left: none;  
-  border-right: 1px solid #a3bbc8;
-}
-
-.jq-number__spin:after {
-  content: '+';
-  font-size: 20px;
-  font-weight: normal;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 17px;
-}
-
-.jq-number__spin.minus:after {
-  content: '-';
-  left: 20px;
-  right: auto; 
-}
 
 .product-info{
-
   &__item{
     display:flex;
     font-size: 16px;
     color: rgb(36, 63, 77);
     line-height: 1.875;
   }
+  &__link-a{
+    text-decoration: none;
+    color: #243f4d;
+    }
+  // &__link{
+
+  
+  // }
 }
 
 .product-slide{
