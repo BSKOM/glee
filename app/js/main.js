@@ -26,6 +26,23 @@ $(function () {
     fade: true
   });
 
+  $(document).ready(function () {
+    $('.related__slider ul').bxSlider({
+      minSlides: 4,
+      maxSlides: 4,
+      slideWidth: 270,
+      slideMargin: 30,
+      moveSlides: 1,
+      controls: true,
+      prevSelector: '.custom-prev',
+      nextSelector: '.custom-next', 
+      pager: false,
+      auto: false,
+      pause: 0,
+    })
+  });
+
+
   $('.js-range-slider').ionRangeSlider({ 
     prefix: "$",
     onStart: function (data){
