@@ -1689,4 +1689,56 @@ z-index: 1;
 
 }
 
+.blog-one{
+
+
+  p{
+
+  }
+
+
+  h6{
+
+  }
+
+  &__box{
+    margin-bottom: 40px;
+  }
+  &__text{
+    margin-bottom: 65px;
+
+    h4{
+    font-size: 36px;
+    font-family: "Rubik";
+    color: rgb(51, 51, 51);
+    line-height: 0.734;
+    }
+    img{
+    width: 323px;
+    height: 210px;
+    }
+    blockquote{
+      background-color: rgba(163, 187, 200, 0.2);
+      width: 830px;
+      height: 131px;
+      padding: 25px 40px;
+      border-left:7px solid rgb(163, 187, 200);
+      line-height: 1.875;
+    }
+
+    cite{  
+      padding-top: 20px;
+      position:relative;
+      margin-left: 45px;
+      font-style:normal;
+      &::before{
+        content: url('../images/blog/detail/blor-one-line.svg');
+        position:absolute;
+        left:-25px;
+        top:10px;      
+      }
+    }
+  }
+a}
+
 @import 'media'; 
