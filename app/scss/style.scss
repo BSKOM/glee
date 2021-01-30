@@ -1689,4 +1689,218 @@ z-index: 1;
 
 }
 
+.blog-one{
+  &__left-img{
+    width: 323px;
+    height: 210px;
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  &__right-img{
+    width: 323px;
+    height: 210px;
+    float:right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  blockquote{
+    background-color: rgba(163, 187, 200, 0.2);
+    width: 830px;
+    height: 131px;
+    padding: 25px 40px;
+    border-left:7px solid rgb(163, 187, 200);
+    line-height: 1.875;
+    margin-bottom: 45px;
+  }
+
+  cite{  
+    padding-top: 20px;
+    position:relative;
+    margin-left: 45px;
+    font-style:normal;
+    &::before{
+      content: url('../images/blog/detail/blor-one-line.svg');
+      position:absolute;
+      left:-25px;
+      top:10px;      
+    }
+  }
+
+  &__box{
+    margin-bottom: 40px;
+  }
+  &__text-top{
+    margin-bottom: 15px;
+    
+    h4{
+      font-size: 36px;
+      font-family: "Rubik";
+      color: rgb(51, 51, 51);
+      line-height: 0.734;
+      margin-bottom: 25px;
+    }
+    h6{
+      font-size: 16px;
+      font-family: "Rubik";
+      // font-weight: bold;
+      color: rgb(36, 63, 77);
+      line-height: 1.875;
+      text-align: left;
+      padding: 30px 0;
+    }
+    p{
+      font-size: 16px;
+      font-family: "Rubik";
+      color: rgb(36, 63, 77);
+      line-height: 1.875;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+  }
+  &__text-bottom{
+    margin-bottom: 65px;
+    h6{
+      font-size: 16px;
+      font-family: "Rubik";
+      // font-weight: bold;
+      color: rgb(36, 63, 77);
+      line-height: 1.875;
+      text-align: left;
+      padding: 30px 0;
+    }
+    p{
+      font-size: 16px;
+      font-family: "Rubik";
+      color: rgb(36, 63, 77);
+      line-height: 1.875;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+  }
+  &__form-title{
+    margin: 100px 0 50px;
+    font-size: 24px;
+    font-family: "Rubik";
+    color: rgb(67, 99, 114);
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  &__form-name{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.051);
+    background: url('../images/blog/detail/shape-user.svg') no-repeat;
+    background-position: 95% 50%;
+    // opacity: 0.102;
+    width: 398px;
+    height: 48px;
+    margin-right: 25px;
+  }
+  &__form-mail{
+    border-width: 1px;
+    border-color: rgb(163, 187, 200);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    background: url('../images/blog/detail/shape-convert.svg') no-repeat;
+    background-position: 95% 50%;
+    width: 398px;
+    height: 48px;
+  }
+  &__form-comment{
+    margin: 20px 0 40px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+    background: url('../images/blog/detail/shape-message.svg') no-repeat;
+    background-position: 97.5% 50%;
+    width: 828px;
+    height: 118px;
+  }
+  &__form-btn{
+    background-color: rgb(163, 187, 200);
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  &__comments-value{
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-family: "Rubik";
+    color: rgb(67, 99, 114);
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  &__client-avatar{
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+   &__comment-content{       
+    border-bottom:2px solid rgb(224, 224, 224);
+  }
+  &__comment{
+    display:flex;
+    margin-bottom: 30px;
+    &:nth-child(2n) {margin-left: 130px;
+    }
+    &:last-child() .blog-one__comment-content{
+      border:none;
+    }
+  }
+
+ 
+  &__comment-props{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  &__comment-text{
+    font-size: 16px;
+    font-family: "Rubik";
+    color: rgb(86, 88, 114);
+    line-height: 1.875;
+  }
+  &__btn-reply{
+    background-color: #fff;
+    font-size: 14px;
+    font-family: "Rubik";
+    color: rgb(82, 98, 120);
+    line-height: 1.2;
+    border:none;
+    padding:10px 20px 10px 0;
+    cursor: pointer;
+    position:relative;
+      &::after{
+      content: url('../images/blog/detail/arrow-right-solid.svg');
+      position:absolute;
+      right:0px;
+      top:10px;      
+    }
+
+  }
+  &__client-name{
+    font-size: 16px;
+    font-family: "Rubik";
+    color: rgb(67, 99, 114);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__comment-data{
+    font-size: 14px;
+    font-family: "Rubik";
+    color: rgb(158, 158, 158);
+    line-height: 1.2;
+  }
+}
+
+
 @import 'media'; 
