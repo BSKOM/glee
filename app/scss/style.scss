@@ -1715,7 +1715,6 @@ z-index: 1;
     line-height: 1.875;
     margin-bottom: 45px;
   }
-
   cite{  
     padding-top: 20px;
     position:relative;
@@ -1726,6 +1725,94 @@ z-index: 1;
       position:absolute;
       left:-25px;
       top:10px;      
+    }
+  }
+  &__author{
+    height: 130px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    border-top:2px solid rgb(235, 235, 235);
+    border-bottom:2px solid rgb(235, 235, 235);
+    margin-bottom: 65px;
+  }
+  &__author-img{
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  &__author-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  &__author-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    font-size: 18px;
+    font-family: "Rubik";
+    color: rgb(51, 51, 51);
+    line-height: 1.384;
+    & span{
+      font-size: 16px;
+      font-family: "Rubik";
+      color: rgb(102, 102, 102);
+      line-height: 1.875;
+    }
+
+  }
+
+  &__author-rigth{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    height:50px;
+    width: 210px;
+  }
+  &__author-tags{
+      display: flex;
+      width:100%;
+      justify-content: space-between;
+      font-size: 16px;
+      font-family: "Rubik";
+      color: rgb(51, 51, 51);
+
+  }
+  &__author-tags--links{
+      width: 140px;
+      
+    a{
+      text-decoration: none;
+      color:#a1a1a1;
+      }
+    path {
+      fill:#a1a1a1;
+    }
+ 
+  }
+
+  &__author-share{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__author-share--links{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    & a:hover{      
+      path {
+        fill:red;
+      }
+
     }
   }
 
@@ -1761,6 +1848,7 @@ z-index: 1;
     }
 
   }
+
   &__text-bottom{
     margin-bottom: 65px;
     h6{
