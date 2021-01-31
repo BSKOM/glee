@@ -1991,9 +1991,115 @@ z-index: 1;
     line-height: 1.2;
   }
 }
-#map{
-  height: 335px;
-  width: 100%;
+
+.contact-top{
+  margin-top: 65px;
+  margin-bottom: 115px;
+  &__item{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    height: 100%;
+    &:hover{
+    .contact-top__icon{
+    // margin: 70px 0 75px;
+      border-radius: 20px;
+      background-color: rgb(163, 187, 200);
+      box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+      width: 80px;
+      height: 81px;
+      }
+  }
+
+  }
+  &__list{
+    margin-top: 75px;
+    max-height: 373px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__icon{
+    margin: 70px 0 75px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 80px;
+    height: 80px;
+  }
+  &:hover{
+    margin: 70px 0 75px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 80px;
+    height: 80px;
+  }
+
 }
+
+.contact-bottom{
+  height: 335px;
+  display:flex;
+  justify-content: space-between;
+  &__message {
+    height: 100%;
+    width: 620px;
+ 
+  }
+  #map{
+    height: 100%;
+    width: 500px;
+  }
+  &__form{
+       display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__form-name{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.051);
+    background: url('../images/blog/detail/shape-user.svg') no-repeat;
+    background-position: 95% 50%;
+    // opacity: 0.102;
+    width: 300px;
+    height: 48px;
+  
+  }
+  &__form-mail{
+    border-width: 1px;
+    border-color: rgb(163, 187, 200);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    background: url('../images/blog/detail/shape-convert.svg') no-repeat;
+    background-position: 95% 50%;
+    width: 300px;
+    height: 48px;
+  }
+  &__form-comment{
+    margin: 20px 0 40px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+    background: url('../images/blog/detail/shape-message.svg') no-repeat;
+    background-position: 97.5% 50%;
+    width: 100%;
+    height: 180px;
+  }
+  &__form-btn{
+    background-color: rgb(163, 187, 200);
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 
 @import 'media'; 
