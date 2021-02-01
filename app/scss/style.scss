@@ -1764,7 +1764,6 @@ z-index: 1;
       color: rgb(102, 102, 102);
       line-height: 1.875;
     }
-
   }
 
   &__author-rigth{
@@ -1989,6 +1988,172 @@ z-index: 1;
     font-family: "Rubik";
     color: rgb(158, 158, 158);
     line-height: 1.2;
+  }
+}
+
+.contact-top{
+  margin-top: 65px;
+  margin-bottom: 115px;
+  &__title-text{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: rgb(163, 187, 200);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+  }
+  &__title{
+    margin-bottom: 75px;
+    font-size: 35px;
+    font-family: "DM Sans";
+    color: rgb(67, 99, 114);
+    font-weight: bold;
+    line-height: 1.629;
+    text-align: center;
+  }
+  &__list{
+    margin-top: 75px;
+    max-height: 385px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 385px;
+    position:relative;
+  }
+ 
+  &__icon{
+    margin: 70px 0 65px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+      content: " ";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: rgb(251, 251, 251);
+      transition: background .5s ease;
+    }
+  }
+  &__icon:hover{
+      border-radius: 20px;
+      background-color: rgb(163, 187, 200);
+      box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+      width: 80px;
+      height: 81px;
+      path{
+        fill:#fff;
+      }
+      &::after{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-width: 2px;
+        border-color: rgb(163, 187, 200);
+        border-style: solid;
+        background-color: rgb(251, 251, 251);
+        transition: background .5s ease;
+      }
+  }
+  &__our{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: "DM Sans";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  &__link,
+  &__our-info{
+    font-size: 16px;
+    font-family: "Rubik";
+    color: rgb(86, 88, 114);
+    line-height: 1.875;
+    text-align: center;
+    text-decoration: none;
+    height: 30px;
+  }
+}
+
+
+.contact-bottom{
+  height: 330px;
+  display:flex;
+  justify-content: space-between;
+  &__message {
+    height: 100%;
+    width: 620px;
+  }
+  #map{
+    height: 100%;
+    width: 500px;
+  }
+  &__form{
+       display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__form-name{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.051);
+    background: url('../images/blog/detail/shape-user.svg') no-repeat;
+    background-position: 95% 50%;
+    // opacity: 0.102;
+    width: 300px;
+    height: 48px;
+  
+  }
+  &__form-mail{
+    border-width: 1px;
+    border-color: rgb(163, 187, 200);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    background: url('../images/blog/detail/shape-convert.svg') no-repeat;
+    background-position: 95% 50%;
+    width: 300px;
+    height: 48px;
+  }
+  &__form-comment{
+    margin: 20px 0 40px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+    background: url('../images/blog/detail/shape-message.svg') no-repeat;
+    background-position: 97.5% 50%;
+    width: 100%;
+    height: 180px;
+  }
+  &__form-btn{
+    background-color: rgb(163, 187, 200);
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
   }
 }
 
